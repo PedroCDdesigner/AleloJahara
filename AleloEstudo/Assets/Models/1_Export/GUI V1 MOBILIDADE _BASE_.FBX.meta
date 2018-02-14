@@ -1,0 +1,386 @@
+fileFormatVersion: 2
+guid: 91301826e30f9f2449a9b62e59dda8dc
+timeCreated: 1515340105
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Arc002
+    100002: Arc003
+    100004: Arc004
+    100006: Arc005
+    100008: Arc006
+    100010: Box001
+    100012: Box022
+    100014: Box027
+    100016: Circle003
+    100018: Circle004
+    100020: Circle005
+    100022: Circle006
+    100024: Circle007
+    100026: Circle008
+    100028: Conteudo
+    100030: Cylinder007
+    100032: Cylinder008
+    100034: Cylinder009
+    100036: Cylinder010
+    100038: Cylinder011
+    100040: //RootNode
+    100042: Header mobilidade
+    100044: Icone cultura
+    100046: Icone hospitais
+    100048: Icone mobilidade
+    100050: Icone restaurantes
+    100052: Icone supermercados
+    100054: Line020
+    100056: Line021
+    100058: Line022
+    100060: Line023
+    100062: Line024
+    100064: Line025
+    100066: Linha Guia Conteudo
+    100068: Linha Guia mobilidade 1
+    100070: Linha Guia mobilidade 2
+    100072: Object
+    100074: Object006
+    100076: Object007
+    100078: Object008
+    100080: Object009
+    100082: Object010
+    100084: PhysCamera001
+    100086: PhysCamera001.Target
+    100088: Plane002
+    100090: Plane007
+    100092: Radar
+    100094: radar bg
+    100096: Text001
+    100098: Text002
+    100100: Text003
+    100102: Text004
+    100104: Text005
+    100106: Text006
+    100108: Text007
+    100110: Text009
+    100112: Text010
+    100114: Text011
+    400000: Arc002
+    400002: Arc003
+    400004: Arc004
+    400006: Arc005
+    400008: Arc006
+    400010: Box001
+    400012: Box022
+    400014: Box027
+    400016: Circle003
+    400018: Circle004
+    400020: Circle005
+    400022: Circle006
+    400024: Circle007
+    400026: Circle008
+    400028: Conteudo
+    400030: Cylinder007
+    400032: Cylinder008
+    400034: Cylinder009
+    400036: Cylinder010
+    400038: Cylinder011
+    400040: //RootNode
+    400042: Header mobilidade
+    400044: Icone cultura
+    400046: Icone hospitais
+    400048: Icone mobilidade
+    400050: Icone restaurantes
+    400052: Icone supermercados
+    400054: Line020
+    400056: Line021
+    400058: Line022
+    400060: Line023
+    400062: Line024
+    400064: Line025
+    400066: Linha Guia Conteudo
+    400068: Linha Guia mobilidade 1
+    400070: Linha Guia mobilidade 2
+    400072: Object
+    400074: Object006
+    400076: Object007
+    400078: Object008
+    400080: Object009
+    400082: Object010
+    400084: PhysCamera001
+    400086: PhysCamera001.Target
+    400088: Plane002
+    400090: Plane007
+    400092: Radar
+    400094: radar bg
+    400096: Text001
+    400098: Text002
+    400100: Text003
+    400102: Text004
+    400104: Text005
+    400106: Text006
+    400108: Text007
+    400110: Text009
+    400112: Text010
+    400114: Text011
+    2300000: Arc002
+    2300002: Arc003
+    2300004: Arc004
+    2300006: Arc005
+    2300008: Arc006
+    2300010: Box001
+    2300012: Box022
+    2300014: Box027
+    2300016: Circle003
+    2300018: Circle004
+    2300020: Circle005
+    2300022: Circle006
+    2300024: Circle007
+    2300026: Circle008
+    2300028: Cylinder007
+    2300030: Cylinder008
+    2300032: Cylinder009
+    2300034: Cylinder010
+    2300036: Cylinder011
+    2300038: Line020
+    2300040: Line021
+    2300042: Line022
+    2300044: Line023
+    2300046: Line024
+    2300048: Line025
+    2300050: Linha Guia mobilidade 1
+    2300052: Object
+    2300054: Object006
+    2300056: Object007
+    2300058: Object008
+    2300060: Object009
+    2300062: Object010
+    2300064: Plane002
+    2300066: Plane007
+    2300068: radar bg
+    2300070: Text001
+    2300072: Text002
+    2300074: Text003
+    2300076: Text004
+    2300078: Text005
+    2300080: Text006
+    2300082: Text007
+    2300084: Text009
+    2300086: Text010
+    2300088: Text011
+    3300000: Arc002
+    3300002: Arc003
+    3300004: Arc004
+    3300006: Arc005
+    3300008: Arc006
+    3300010: Box001
+    3300012: Box022
+    3300014: Box027
+    3300016: Circle003
+    3300018: Circle004
+    3300020: Circle005
+    3300022: Circle006
+    3300024: Circle007
+    3300026: Circle008
+    3300028: Cylinder007
+    3300030: Cylinder008
+    3300032: Cylinder009
+    3300034: Cylinder010
+    3300036: Cylinder011
+    3300038: Line020
+    3300040: Line021
+    3300042: Line022
+    3300044: Line023
+    3300046: Line024
+    3300048: Line025
+    3300050: Linha Guia mobilidade 1
+    3300052: Object
+    3300054: Object006
+    3300056: Object007
+    3300058: Object008
+    3300060: Object009
+    3300062: Object010
+    3300064: Plane002
+    3300066: Plane007
+    3300068: radar bg
+    3300070: Text001
+    3300072: Text002
+    3300074: Text003
+    3300076: Text004
+    3300078: Text005
+    3300080: Text006
+    3300082: Text007
+    3300084: Text009
+    3300086: Text010
+    3300088: Text011
+    4300000: Linha Guia mobilidade 1
+    4300002: radar bg
+    4300004: Text007
+    4300006: Text001
+    4300008: Text002
+    4300010: Text003
+    4300012: Text004
+    4300014: Text005
+    4300016: Text006
+    4300018: Text009
+    4300020: Object
+    4300022: Object006
+    4300024: Object007
+    4300026: Object008
+    4300028: Object009
+    4300030: Object010
+    4300032: Circle006
+    4300034: Plane002
+    4300036: Text010
+    4300038: Box022
+    4300040: Box001
+    4300042: Line020
+    4300044: Circle005
+    4300046: Cylinder007
+    4300048: Arc006
+    4300050: Line021
+    4300052: Circle004
+    4300054: Circle003
+    4300056: Line025
+    4300058: Circle008
+    4300060: Line024
+    4300062: Line022
+    4300064: Plane007
+    4300066: Text011
+    4300068: Box027
+    4300070: Line023
+    4300072: Circle007
+    4300074: Cylinder008
+    4300076: Arc002
+    4300078: Cylinder009
+    4300080: Arc003
+    4300082: Arc004
+    4300084: Cylinder010
+    4300086: Cylinder011
+    4300088: Arc005
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 10 - Default
+    second: {fileID: 2100000, guid: 6c24c4a799fa554498364e967d2e204e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: COR secundaria 2
+    second: {fileID: 2100000, guid: a1ce3e2de9280fc44b8d82037da22238, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #42'
+    second: {fileID: 2100000, guid: 9ae574cdba939b44a84e73d5681c75ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #43'
+    second: {fileID: 2100000, guid: 0f4cbe26eada83d4dbc92d382c162b16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: branco
+    second: {fileID: 2100000, guid: 0d330715659a6d44b89d8b720db37caf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: icone 1
+    second: {fileID: 2100000, guid: 9905bd5be33026443a6ccdd21db5238d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: icone 2
+    second: {fileID: 2100000, guid: 9ae574cdba939b44a84e73d5681c75ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: icone 3
+    second: {fileID: 2100000, guid: 825d870628919f848992ad8ef06366f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: icone 4
+    second: {fileID: 2100000, guid: 8a1ae4df5e44d58489aab24773b65154, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: icone 5
+    second: {fileID: 2100000, guid: 1e4b5229c322eeb4a8079fef4e646da1, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

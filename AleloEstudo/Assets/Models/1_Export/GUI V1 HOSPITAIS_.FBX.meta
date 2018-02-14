@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 912dbca20ae56dd498c329bb3007c581
+timeCreated: 1515340104
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Arc001
+    100002: Arc002
+    100004: Arc004
+    100006: Arc005
+    100008: Arc006
+    100010: Box001
+    100012: Box022
+    100014: Box028
+    100016: Circle005
+    100018: Cylinder007
+    100020: Cylinder008
+    100022: Cylinder009
+    100024: Cylinder010
+    100026: Cylinder011
+    100028: //RootNode
+    100030: Header hospitais
+    100032: Icone hospitais ativo
+    100034: Icone mobilidade
+    100036: Icone Restaurantes
+    100038: Linha Guia hospitais 1
+    100040: Linha Guia hospitais 2
+    100042: PhysCamera001
+    100044: PhysCamera001.Target
+    100046: Plane002
+    100048: Text010
+    400000: Arc001
+    400002: Arc002
+    400004: Arc004
+    400006: Arc005
+    400008: Arc006
+    400010: Box001
+    400012: Box022
+    400014: Box028
+    400016: Circle005
+    400018: Cylinder007
+    400020: Cylinder008
+    400022: Cylinder009
+    400024: Cylinder010
+    400026: Cylinder011
+    400028: //RootNode
+    400030: Header hospitais
+    400032: Icone hospitais ativo
+    400034: Icone mobilidade
+    400036: Icone Restaurantes
+    400038: Linha Guia hospitais 1
+    400040: Linha Guia hospitais 2
+    400042: PhysCamera001
+    400044: PhysCamera001.Target
+    400046: Plane002
+    400048: Text010
+    2300000: Arc001
+    2300002: Arc002
+    2300004: Arc004
+    2300006: Arc005
+    2300008: Arc006
+    2300010: Box001
+    2300012: Box022
+    2300014: Box028
+    2300016: Circle005
+    2300018: Cylinder007
+    2300020: Cylinder008
+    2300022: Cylinder009
+    2300024: Cylinder010
+    2300026: Cylinder011
+    2300028: Linha Guia hospitais 1
+    2300030: Plane002
+    2300032: Text010
+    3300000: Arc001
+    3300002: Arc002
+    3300004: Arc004
+    3300006: Arc005
+    3300008: Arc006
+    3300010: Box001
+    3300012: Box022
+    3300014: Box028
+    3300016: Circle005
+    3300018: Cylinder007
+    3300020: Cylinder008
+    3300022: Cylinder009
+    3300024: Cylinder010
+    3300026: Cylinder011
+    3300028: Linha Guia hospitais 1
+    3300030: Plane002
+    3300032: Text010
+    4300000: Cylinder011
+    4300002: Arc005
+    4300004: Cylinder010
+    4300006: Arc004
+    4300008: Linha Guia hospitais 1
+    4300010: Plane002
+    4300012: Text010
+    4300014: Box001
+    4300016: Box022
+    4300018: Cylinder007
+    4300020: Arc001
+    4300022: Cylinder008
+    4300024: Arc006
+    4300026: Cylinder009
+    4300028: Arc002
+    4300030: Box028
+    4300032: Circle005
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 10 - Default
+    second: {fileID: 2100000, guid: 6c24c4a799fa554498364e967d2e204e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: COR secundaria 2
+    second: {fileID: 2100000, guid: a1ce3e2de9280fc44b8d82037da22238, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #43'
+    second: {fileID: 2100000, guid: 0f4cbe26eada83d4dbc92d382c162b16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: branco
+    second: {fileID: 2100000, guid: 0d330715659a6d44b89d8b720db37caf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: icone 1
+    second: {fileID: 2100000, guid: 9905bd5be33026443a6ccdd21db5238d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: icone 2
+    second: {fileID: 2100000, guid: 9ae574cdba939b44a84e73d5681c75ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: icone 3
+    second: {fileID: 2100000, guid: 825d870628919f848992ad8ef06366f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: icone 4
+    second: {fileID: 2100000, guid: 8a1ae4df5e44d58489aab24773b65154, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: icone 5
+    second: {fileID: 2100000, guid: 1e4b5229c322eeb4a8079fef4e646da1, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
