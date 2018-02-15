@@ -7,14 +7,14 @@ using UnityEngine;
 public class LineAnimator : MonoBehaviour {
       LineRenderer lineRenderer;
       public Transform[] points;
-      private Vector3[] positionsOfPoints;
+      public Vector3[] positionsOfPoints;
  
  void Start(){
      lineRenderer = GetComponent<LineRenderer>();
-     UpdateLine(); // this can be called in update if your positions aren't static
+     //UpdateLine(); // this can be called in update if your positions aren't static
  }
  
- void UpdateLine()
+ public void UpdateLine()
  {
      List<Vector3> temp = new List<Vector3>();
      foreach(Transform t in points)

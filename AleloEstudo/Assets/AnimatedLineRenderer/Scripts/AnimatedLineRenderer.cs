@@ -32,6 +32,10 @@ namespace DigitalRuby.AnimatedLineRenderer
         [Tooltip("Order in sort layer")]
         public int OrderInSortLayer = 1;
 
+        public bool highlited = false;
+
+        public bool isLineFinished = false;
+
         public Transform[] points;
 
         private Vector3[] positionOfPoints;
@@ -101,10 +105,10 @@ namespace DigitalRuby.AnimatedLineRenderer
             lineRenderer = GetComponent<LineRenderer>();
             lineRenderer.SetVertexCount(0);
 
-            MapPoints();
+            //MapPoints();
         }
         
-        private void MapPoints(){
+        public void MapPoints(){
             foreach(Transform t in points){
                 Enqueue(t.position);
             }
@@ -112,7 +116,10 @@ namespace DigitalRuby.AnimatedLineRenderer
 
         private void Update()
         {
-            ProcessCurrent();
+            if (highlited)
+            {
+                 ProcessCurrent();
+            }
             if (!Resetting)
             {
                 lineRenderer.SetColors(StartColor, EndColor);
@@ -221,6 +228,7 @@ namespace DigitalRuby.AnimatedLineRenderer
             queue.Clear();
             Resetting = false;
             StartPoint = EndPoint = Vector3.zero;
+            //isLineFinished = false;
         }
 
         /// <summary>
