@@ -16,22 +16,17 @@ IFocusable  {
     public GameObject LinhaRadar;
     private AnimatedLineRenderer LRc;
 
-    public GameObject CirculoHeaderStart;
     public GameObject CirculoHeaderFinish;
 
-    public bool isHighlited = false;
-    public bool wasClicked = false;
-
+    private bool unMap = true;
     Animator animator;
 
-    // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         //  defaultMaterials = GetComponent<Renderer>().materials;
 
         LHc = LinhaHeader.GetComponent<AnimatedLineRenderer>();
         LRc = LinhaRadar.GetComponent<AnimatedLineRenderer>();
-
-        CirculoHeaderStart.SetActive(isHighlited);
 
         menuController = FindObjectOfType<MenuController>();
         botaoAnimation = GetComponentInChildren<BotaoAnimation>();
@@ -42,74 +37,52 @@ IFocusable  {
 	}
 	
 	// Update is called once per frame
-    void Update () {
-        /*if (LHc.isLineFinished)
-        {
-            CirculoHeaderFinish.SetActive(true);
-        } else
-        {
-            CirculoHeaderFinish.SetActive(false);
-        }*/
+    void Update ()
+    {
 
-        if (isHighlited && Input.GetMouseButtonDown(0))
+        if (animator.GetBool("isHighlighted") && Input.GetMouseButtonDown(0))
         {
-            LHc.MapPoints();
-            LRc.MapPoints();
-
-            CirculoHeaderStart.SetActive(true);
-
+            //Only maps if needed
+            if(!LHc.isMapped && unMap)
+            {
+                LHc.MapPoints();
+                LRc.MapPoints();
+            }
             LRc.clicked = true;
             LHc.clicked = true;
-            menuController.BotaoHeaderSelect(this.name);
-            animator.SetTrigger("selected");
-            Debug.Log(menuController.currentButton);
-        } 
 
-        if(menuController.currentButton != this.name)
+            menuController.BotaoHeaderSelect(this.name);            
+
+            animator.SetBool("isSelected", true);
+        }
+
+        //If you click on a new header button -- (Destroy old Lines), (Animator Updates), (Unmaps Lines)
+        if (menuController.currentButton != this.name)
         {
-            CirculoHeaderStart.SetActive(false);
+            animator.SetBool("isSelected", false);
             LRc.clicked = false;
             LHc.clicked = false;
-            LHc.Reset();
 
-            LRc.Reset();
+            //Unmap when you click a new button
+            unMap = true;
+                //Destroys Line
+                LHc.Reset();
+                LRc.Reset();
         }
-
-
-        //Debug.Log(LHc.isLineFinished);
-		
 	}
-
-    public void ClearUnselectedButton(string name){
-        Debug.Log("NAME CHEGOU CLEAR" + name);
-        if (name == this.name){
-            animator.SetTrigger("selectedToHighlight");
-            animator.SetTrigger("idle");
-        }
-        
-    }
-
 
     public void OnFocusEnter()
     {
-        isHighlited = true;
-    //  botaoAnimation.EntrouFocus();  
-        animator.SetTrigger("highlight");      
+        animator.SetBool("isHighlighted", true);      
     }
 
     public void OnFocusExit()
     {
-        isHighlited = false;
-        animator.SetTrigger("idle");
-
-        // MoveOverSeconds(objectToMove, StartPosition.transform.position, Speed);
-        //  Debug.Log("SAIU" + this.name);
+        animator.SetBool("isHighlighted", false);
     }
-
 
     public void OnInputClicked(InputClickedEventData eventData)
     {
-        //   Debug.Log("CLICKKKKK" + this.name);
         menuController.BotaoHeaderSelect(this.name);
         animator.SetTrigger("selected");
     }

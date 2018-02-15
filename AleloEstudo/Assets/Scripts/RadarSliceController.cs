@@ -11,6 +11,7 @@ public class RadarSliceController : MonoBehaviour {
 	private bool focusCenterSlice = false;
 	private bool focusOutSlice = false;
 
+    // Use this for initialization
     void Start ()
     {
 		animator = GetComponent<Animator>();	
@@ -22,7 +23,7 @@ public class RadarSliceController : MonoBehaviour {
     }
     public void EntrouWhiteSlice(string name)
     {
-		focusWhite = true;
+			focusWhite = true;
         //animator.SetTrigger("highlightWhite");
         animator.SetBool("b_highlightWhite", true);
     }

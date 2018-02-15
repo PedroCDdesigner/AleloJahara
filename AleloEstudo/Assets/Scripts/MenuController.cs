@@ -26,14 +26,6 @@ public class MenuController : MonoBehaviour {
 	public void BotaoHeaderSelect(string name)
     {
         currentButton = name;
-            foreach (BotaoHeader botao in botaoHeaders)
-            {
-                if (currentButton == botao.name)
-                {
-                    botao.ClearUnselectedButton(currentButton);
-                }
-        }
-        //currentButton = name;
         
 		switch (name)
         {

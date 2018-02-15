@@ -33,6 +33,7 @@ namespace DigitalRuby.AnimatedLineRenderer
         public int OrderInSortLayer = 1;
 
         public bool clicked = false;
+        public bool isMapped; 
 
         public bool isLineFinished = false;
 
@@ -108,10 +109,13 @@ namespace DigitalRuby.AnimatedLineRenderer
             //MapPoints();
         }
         
-        public void MapPoints(){
-            foreach(Transform t in points){
+        public void MapPoints()
+        {
+            foreach(Transform t in points)
+            {
                 Enqueue(t.position);
             }
+            isMapped = true;
         }
 
         private void Update()
@@ -236,7 +240,7 @@ namespace DigitalRuby.AnimatedLineRenderer
             queue.Clear();
             Resetting = false;
             StartPoint = EndPoint = Vector3.zero;
-            //isLineFinished = false;
+            isMapped = false;
         }
 
         /// <summary>
