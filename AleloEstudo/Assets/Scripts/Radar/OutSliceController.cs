@@ -3,40 +3,46 @@ using System.Collections.Generic;
 using UnityEngine;
 using HoloToolkit.Unity.InputModule;
 
-public class OutSliceController : MonoBehaviour, IFocusable, IInputClickHandler {
+public class OutSliceController : MonoBehaviour, IFocusable, IInputClickHandler
+{
+    Animator animator;
 
-	Animator animator;
-
+    public GameObject Menu;
 	MenuController menuController;
-	private RadarSliceController radarSliceController;
-	// Use this for initialization
-	void Start () {
+
+    public bool isOutSliceON = false;
+
+	void Start ()
+    {
 		animator = GetComponent<Animator>();
-		radarSliceController =  GetComponentInParent<RadarSliceController>();
-		menuController = GetComponent<MenuController>();
+        menuController = Menu.GetComponent<MenuController>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 	   public void OnFocusEnter()
     {
-		animator.SetTrigger("highlight");
-		radarSliceController.EntrouOutSlice(this.name);
-		
+        isOutSliceON = true;
+        animator.SetBool("b_highlightedOutSlice", true);
     }
 
     public void OnFocusExit()
     {
-		animator.SetTrigger("idle");
-		radarSliceController.SaiuOutSlice(this.name);
-		
+        isOutSliceON = false;
+        animator.SetBool("b_highlightedOutSlice", false);
     }
 
 		 public void OnInputClicked(InputClickedEventData eventData)
     {
-        string quadrantName =  transform.parent.parent.parent.name + transform.parent.name ;
+        string quadrantName = transform.parent.parent.parent.name + transform.parent.name ;
 		menuController.HandleQuadrantSelection(quadrantName);
     }
+
+    void Update()
+    {
+        if (isOutSliceON && Input.GetMouseButtonDown(0))
+        {
+            string contentToPrint = transform.parent.parent.parent.parent.name + this.gameObject.name;
+            menuController.PrintContent(contentToPrint);
+        }
+    }
+
 }

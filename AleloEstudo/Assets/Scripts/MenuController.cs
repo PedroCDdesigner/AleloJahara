@@ -10,24 +10,30 @@ public class MenuController : MonoBehaviour {
 
     private RadarTextController radarTextController;
 
-    public string currentButton = "Mobilidade";
+    public string currentButton;
 
-	void Start () {
+	void Start ()
+    {
         MapComponents();
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 		
 	}
 
-	public void BotaoHeaderSelect(string name){
-            foreach (BotaoHeader botao in botaoHeaders){
-                if (currentButton == botao.name) {
+	public void BotaoHeaderSelect(string name)
+    {
+        currentButton = name;
+            foreach (BotaoHeader botao in botaoHeaders)
+            {
+                if (currentButton == botao.name)
+                {
                     botao.ClearUnselectedButton(currentButton);
                 }
-            }
-        currentButton = name;
+        }
+        //currentButton = name;
         
 		switch (name)
         {
@@ -79,9 +85,207 @@ public class MenuController : MonoBehaviour {
             print ("DEU ERRADOOO");
             break;
 		}
+
+
     }
 
-    private void MapComponents(){
+    public void PrintContent(string name)
+    {
+        string switchThis = currentButton + name;
+        switch (switchThis)
+        {
+            case "MobilidadeQ00OutSlice":
+                print(switchThis);
+                break;
+            case "MobilidadeQ01OutSlice":
+                print(switchThis);
+                break;
+            case "MobilidadeQ02OutSlice":
+                print(switchThis);
+                break;
+            case "MobilidadeQ03OutSlice":
+                print(switchThis);
+                break;
+            case "MobilidadeQ04OutSlice":
+                print(switchThis);
+                break;
+            case "MobilidadeQ05OutSlice":
+                print(switchThis);
+                break;
+            case "MobilidadeQ00CenterSlice":
+                print(switchThis);
+                break;
+            case "MobilidadeQ01CenterSlice":
+                print(switchThis);
+                break;
+            case "MobilidadeQ02CenterSlice":
+                print(switchThis);
+                break;
+            case "MobilidadeQ03CenterSlice":
+                print(switchThis);
+                break;
+            case "MobilidadeQ04CenterSlice":
+                print(switchThis);
+                break;
+            case "MobilidadeQ05CenterSlice":
+                print(switchThis);
+                break;
+                //
+            case "RestauranteQ00OutSlice":
+                print(switchThis);
+                break;
+            case "RestauranteQ01OutSlice":
+                print(switchThis);
+                break;
+            case "RestauranteQ02OutSlice":
+                print(switchThis);
+                break;
+            case "RestauranteQ03OutSlice":
+                print(switchThis);
+                break;
+            case "RestauranteQ04OutSlice":
+                print(switchThis);
+                break;
+            case "RestauranteQ05OutSlice":
+                print(switchThis);
+                break;
+            case "RestauranteQ00CenterSlice":
+                print(switchThis);
+                break;
+            case "RestauranteQ01CenterSlice":
+                print(switchThis);
+                break;
+            case "RestauranteQ02CenterSlice":
+                print(switchThis);
+                break;
+            case "RestauranteQ03CenterSlice":
+                print(switchThis);
+                break;
+            case "RestauranteQ04CenterSlice":
+                print(switchThis);
+                break;
+            case "RestauranteQ05CenterSlice":
+                print(switchThis);
+                break;
+            //
+            case "SaudeQ00OutSlice":
+                print(switchThis);
+                break;
+            case "SaudeQ01OutSlice":
+                print(switchThis);
+                break;
+            case "SaudeQ02OutSlice":
+                print(switchThis);
+                break;
+            case "SaudeQ03OutSlice":
+                print(switchThis);
+                break;
+            case "SaudeQ04OutSlice":
+                print(switchThis);
+                break;
+            case "SaudeQ05OutSlice":
+                print(switchThis);
+                break;
+            case "SaudeQ00CenterSlice":
+                print(switchThis);
+                break;
+            case "SaudeQ01CenterSlice":
+                print(switchThis);
+                break;
+            case "SaudeQ02CenterSlice":
+                print(switchThis);
+                break;
+            case "SaudeQ03CenterSlice":
+                print(switchThis);
+                break;
+            case "SaudeQ04CenterSlice":
+                print(switchThis);
+                break;
+            case "SaudeQ05CenterSlice":
+                print(switchThis);
+                break;
+            //
+            case "LogisticaQ00OutSlice":
+                print(switchThis);
+                break;
+            case "LogisticaQ01OutSlice":
+                print(switchThis);
+                break;
+            case "LogisticaQ02OutSlice":
+                print(switchThis);
+                break;
+            case "LogisticaQ03OutSlice":
+                print(switchThis);
+                break;
+            case "LogisticaQ04OutSlice":
+                print(switchThis);
+                break;
+            case "LogisticaQ05OutSlice":
+                print(switchThis);
+                break;
+            case "LogisticaQ00CenterSlice":
+                print(switchThis);
+                break;
+            case "LogisticaQ01CenterSlice":
+                print(switchThis);
+                break;
+            case "LogisticaQ02CenterSlice":
+                print(switchThis);
+                break;
+            case "LogisticaQ03CenterSlice":
+                print(switchThis);
+                break;
+            case "LogisticaQ04CenterSlice":
+                print(switchThis);
+                break;
+            case "LogisticaQ05CenterSlice":
+                print(switchThis);
+                break;
+            //
+            case "CulturaQ00OutSlice":
+                print(switchThis);
+                break;
+            case "CulturaQ01OutSlice":
+                print(switchThis);
+                break;
+            case "CulturaQ02OutSlice":
+                print(switchThis);
+                break;
+            case "CulturaQ03OutSlice":
+                print(switchThis);
+                break;
+            case "CulturaQ04OutSlice":
+                print(switchThis);
+                break;
+            case "CulturaQ05OutSlice":
+                print(switchThis);
+                break;
+            case "CulturaQ00CenterSlice":
+                print(switchThis);
+                break;
+            case "CulturaQ01CenterSlice":
+                print(switchThis);
+                break;
+            case "CulturaQ02CenterSlice":
+                print(switchThis);
+                break;
+            case "CulturaQ03CenterSlice":
+                print(switchThis);
+                break;
+            case "CulturaQ04CenterSlice":
+                print(switchThis);
+                break;
+            case "CulturaQ05CenterSlice":
+                print(switchThis);
+                break;
+            //
+            default:
+                //Debug.Log(switchThis);
+                break;
+        }
+    }
+
+        private void MapComponents(){
         botaoHeaders = GetComponentsInChildren<BotaoHeader>();
         radarTextController = GetComponentInChildren<RadarTextController>();
     }

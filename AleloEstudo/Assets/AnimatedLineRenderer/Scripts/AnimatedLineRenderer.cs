@@ -32,7 +32,7 @@ namespace DigitalRuby.AnimatedLineRenderer
         [Tooltip("Order in sort layer")]
         public int OrderInSortLayer = 1;
 
-        public bool highlited = false;
+        public bool clicked = false;
 
         public bool isLineFinished = false;
 
@@ -116,7 +116,7 @@ namespace DigitalRuby.AnimatedLineRenderer
 
         private void Update()
         {
-            if (highlited)
+            if (clicked)
             {
                  ProcessCurrent();
             }

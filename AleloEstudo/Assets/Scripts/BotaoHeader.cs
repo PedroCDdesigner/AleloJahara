@@ -43,24 +43,40 @@ IFocusable  {
 	
 	// Update is called once per frame
     void Update () {
-        if (LHc.isLineFinished)
+        /*if (LHc.isLineFinished)
         {
             CirculoHeaderFinish.SetActive(true);
         } else
         {
             CirculoHeaderFinish.SetActive(false);
-        }
-
+        }*/
 
         if (isHighlited && Input.GetMouseButtonDown(0))
         {
+            LHc.MapPoints();
+            LRc.MapPoints();
+
+            CirculoHeaderStart.SetActive(true);
+
+            LRc.clicked = true;
+            LHc.clicked = true;
             menuController.BotaoHeaderSelect(this.name);
             animator.SetTrigger("selected");
             Debug.Log(menuController.currentButton);
+        } 
+
+        if(menuController.currentButton != this.name)
+        {
+            CirculoHeaderStart.SetActive(false);
+            LRc.clicked = false;
+            LHc.clicked = false;
+            LHc.Reset();
+
+            LRc.Reset();
         }
 
 
-        Debug.Log(LHc.isLineFinished);
+        //Debug.Log(LHc.isLineFinished);
 		
 	}
 
@@ -78,15 +94,7 @@ IFocusable  {
     {
         isHighlited = true;
     //  botaoAnimation.EntrouFocus();  
-        animator.SetTrigger("highlight");
-
-        CirculoHeaderStart.SetActive(isHighlited);
-        LHc.MapPoints();
-        LHc.highlited = isHighlited;
-
-
-        LRc.GetComponent<AnimatedLineRenderer>().MapPoints();
-        LRc.GetComponent<AnimatedLineRenderer>().highlited = isHighlited;
+        animator.SetTrigger("highlight");      
     }
 
     public void OnFocusExit()
@@ -94,12 +102,6 @@ IFocusable  {
         isHighlited = false;
         animator.SetTrigger("idle");
 
-        CirculoHeaderStart.SetActive(isHighlited);
-        LHc.Reset();
-        LHc.highlited = isHighlited;
-
-        LRc.Reset();
-        LRc.highlited = isHighlited;
         // MoveOverSeconds(objectToMove, StartPosition.transform.position, Speed);
         //  Debug.Log("SAIU" + this.name);
     }

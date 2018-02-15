@@ -5,28 +5,40 @@ using HoloToolkit.Unity.InputModule;
 
 public class WhiteSliceController : MonoBehaviour, IFocusable {
 
-	private RadarSliceController radarSliceController;
-	// Use this for initialization
-	void Start () {
-		radarSliceController =  GetComponentInParent<RadarSliceController>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-	   public void OnFocusEnter()
+	private Animator Anim;
+    //private OutSliceController outSliceController;
+    
+    public GameObject OutSlice;
+    private OutSliceController OutSliceController;
+
+    public GameObject CenterSlice;
+    private CenterSliceController CenterSliceController;
+
+    public bool isWhiteSliceOn;
+
+    void Start ()
     {
-		radarSliceController.EntrouWhiteSlice(this.name);
-		
+        Anim = GetComponent<Animator>();
+        CenterSliceController = CenterSlice.GetComponent<CenterSliceController>();
+        OutSliceController = OutSlice.GetComponent<OutSliceController>();
+    }
+
+	public void OnFocusEnter()
+    {
+        isWhiteSliceOn = true;
+    }
+
+    private void Update()
+    {
+        if(OutSliceController.isOutSliceON || CenterSliceController.isCenterSliceON || isWhiteSliceOn)
+        {
+            Anim.SetBool("b_highlightWhite", true);
+        }       else
+                      { Anim.SetBool("b_highlightWhite", false); }
     }
 
     public void OnFocusExit()
     {
-		
-		radarSliceController.SaiuWhiteSlice(this.name);
-		
+        isWhiteSliceOn = false;
     }
-
-	
 }
