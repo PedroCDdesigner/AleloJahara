@@ -46,6 +46,9 @@ IFocusable  {
         if (LHc.isLineFinished)
         {
             CirculoHeaderFinish.SetActive(true);
+        } else
+        {
+            CirculoHeaderFinish.SetActive(false);
         }
 
         Debug.Log(LHc.isLineFinished);

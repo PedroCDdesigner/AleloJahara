@@ -127,6 +127,14 @@ namespace DigitalRuby.AnimatedLineRenderer
                 lineRenderer.sortingLayerName = SortLayerName;
                 lineRenderer.sortingOrder = OrderInSortLayer;
             }
+            if (lastQueued != null)
+            {
+                isLineFinished = true;  
+            }
+            if (lastQueued != null)
+            {
+                isLineFinished = false;
+            }
         }
 
         private IEnumerator ResetAfterSecondsInternal(float seconds, Action callback)
