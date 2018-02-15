@@ -16,12 +16,6 @@ public class MenuController : MonoBehaviour {
     {
         MapComponents();
 	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-		
-	}
 
 	public void BotaoHeaderSelect(string name)
     {

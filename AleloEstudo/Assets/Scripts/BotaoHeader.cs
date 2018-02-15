@@ -31,15 +31,10 @@ IFocusable  {
         menuController = FindObjectOfType<MenuController>();
         botaoAnimation = GetComponentInChildren<BotaoAnimation>();
         animator = GetComponent<Animator>();
-
-        // botaoAnimation.EntrouFocus();    
-        
 	}
 	
-	// Update is called once per frame
     void Update ()
     {
-
         if (animator.GetBool("isHighlighted") && Input.GetMouseButtonDown(0))
         {
             //Only maps if needed
