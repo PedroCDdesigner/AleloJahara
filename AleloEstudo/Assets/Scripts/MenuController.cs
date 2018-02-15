@@ -10,7 +10,7 @@ public class MenuController : MonoBehaviour {
 
     private RadarTextController radarTextController;
 
-    private string currentButton = "Mobilidade";
+    public string currentButton = "Mobilidade";
 
 	void Start () {
         MapComponents();

@@ -48,6 +48,15 @@ IFocusable  {
             CirculoHeaderFinish.SetActive(true);
         }
 
+
+        if (isHighlited && Input.GetMouseButtonDown(0))
+        {
+            menuController.BotaoHeaderSelect(this.name);
+            animator.SetTrigger("selected");
+            Debug.Log(menuController.currentButton);
+        }
+
+
         Debug.Log(LHc.isLineFinished);
 		
 	}
@@ -99,5 +108,7 @@ IFocusable  {
         menuController.BotaoHeaderSelect(this.name);
         animator.SetTrigger("selected");
     }
+
+    
 
 }
