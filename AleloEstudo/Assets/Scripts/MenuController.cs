@@ -75,6 +75,8 @@ public class MenuController : MonoBehaviour {
 
     }
 
+    //Function called by OutSliceController and CenterSliceController
+    //______Manage the display here______//
     public void PrintContent(string name)
     {
         string switchThis = currentButton + name;
@@ -271,7 +273,8 @@ public class MenuController : MonoBehaviour {
         }
     }
 
-        private void MapComponents(){
+        private void MapComponents()
+    {
         botaoHeaders = GetComponentsInChildren<BotaoHeader>();
         radarTextController = GetComponentInChildren<RadarTextController>();
     }

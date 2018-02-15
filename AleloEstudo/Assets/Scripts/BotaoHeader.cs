@@ -37,7 +37,7 @@ IFocusable  {
     {
         if (animator.GetBool("isHighlighted") && Input.GetMouseButtonDown(0))
         {
-            //Only maps if needed
+            //Only maps line points if needed
             if(!LHc.isMapped && unMap)
             {
                 LHc.MapPoints();
@@ -78,8 +78,38 @@ IFocusable  {
 
     public void OnInputClicked(InputClickedEventData eventData)
     {
-        menuController.BotaoHeaderSelect(this.name);
-        animator.SetTrigger("selected");
+        /*menuController.BotaoHeaderSelect(this.name);
+        animator.SetTrigger("selected");*/
+
+        if (animator.GetBool("isHighlighted"))
+        {
+            //Only maps if needed
+            if (!LHc.isMapped && unMap)
+            {
+                LHc.MapPoints();
+                LRc.MapPoints();
+            }
+            LRc.clicked = true;
+            LHc.clicked = true;
+
+            menuController.BotaoHeaderSelect(this.name);
+
+            animator.SetBool("isSelected", true);
+        }
+
+        //If you click on a new header button -- (Destroy old Lines), (Animator Updates), (Unmaps Lines)
+        if (menuController.currentButton != this.name)
+        {
+            animator.SetBool("isSelected", false);
+            LRc.clicked = false;
+            LHc.clicked = false;
+
+            //Unmap when you click a new button
+            unMap = true;
+            //Destroys Line
+            LHc.Reset();
+            LRc.Reset();
+        }
     }
 
     

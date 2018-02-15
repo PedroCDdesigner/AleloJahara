@@ -6,7 +6,6 @@ using HoloToolkit.Unity.InputModule;
 public class WhiteSliceController : MonoBehaviour, IFocusable {
 
 	private Animator Anim;
-    //private OutSliceController outSliceController;
     
     public GameObject OutSlice;
     private OutSliceController OutSliceController;
@@ -28,9 +27,10 @@ public class WhiteSliceController : MonoBehaviour, IFocusable {
         isWhiteSliceOn = true;
     }
 
+    //Manages animation on Update
     private void Update()
     {
-        if(OutSliceController.isOutSliceON || CenterSliceController.isCenterSliceON || isWhiteSliceOn)
+        if (OutSliceController.isOutSliceON || CenterSliceController.isCenterSliceON || isWhiteSliceOn)
         {
             Anim.SetBool("b_highlightWhite", true);
         }       else
