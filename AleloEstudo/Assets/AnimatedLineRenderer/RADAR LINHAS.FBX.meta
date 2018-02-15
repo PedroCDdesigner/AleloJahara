@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: 293acebc3295ac14d97bde621e3eacb9
+timeCreated: 1518655269
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Arc002
+    100002: Arc003
+    100004: Arc004
+    100006: Arc005
+    100008: Arc008
+    100010: Arc009
+    100012: Box001
+    100014: Box002
+    100016: Circle002
+    100018: Circle005
+    100020: Circle006
+    100022: Circle008
+    100024: Circle009
+    100026: Circle010
+    100028: Circle011
+    100030: Circle012
+    100032: Circle013
+    100034: Circle014
+    100036: Circle015
+    100038: Circle016
+    100040: Circle017
+    100042: Circle018
+    100044: Circle019
+    100046: Circle020
+    100048: Cylinder007
+    100050: Cylinder008
+    100052: Cylinder009
+    100054: Cylinder011
+    100056: Cylinder012
+    100058: Dummy001
+    100060: Header BG
+    100062: Icone Cultura
+    100064: Icone Logistica
+    100066: Icone Restaurante
+    100068: Icone Saude
+    100070: Line019
+    100072: Line023
+    100074: Line024
+    100076: Line025
+    100078: Line026
+    100080: Linha Cultura
+    100082: Linha logistica
+    100084: Linha Mob
+    100086: Linha restaurantes
+    100088: Linhas Saude
+    100090: Object
+    100092: Object001
+    100094: Object002
+    100096: Object003
+    100098: Object004
+    100100: Object005
+    100102: Object007
+    100104: Object008
+    100106: Object009
+    100108: Object010
+    100110: Object011
+    100112: Object012
+    100114: Object013
+    100116: Object014
+    100118: Object015
+    100120: Plane008
+    100122: Radar BG
+    100124: //RootNode
+    100126: Text007
+    100128: Text009
+    100130: Text010
+    100132: Text011
+    100134: Text012
+    100136: Text013
+    100138: Text014
+    100140: Text015
+    100142: Text016
+    100144: Text017
+    100146: Text018
+    100148: Text019
+    400000: Arc002
+    400002: Arc003
+    400004: Arc004
+    400006: Arc005
+    400008: Arc008
+    400010: Arc009
+    400012: Box001
+    400014: Box002
+    400016: Circle002
+    400018: Circle005
+    400020: Circle006
+    400022: Circle008
+    400024: Circle009
+    400026: Circle010
+    400028: Circle011
+    400030: Circle012
+    400032: Circle013
+    400034: Circle014
+    400036: Circle015
+    400038: Circle016
+    400040: Circle017
+    400042: Circle018
+    400044: Circle019
+    400046: Circle020
+    400048: Cylinder007
+    400050: Cylinder008
+    400052: Cylinder009
+    400054: Cylinder011
+    400056: Cylinder012
+    400058: Dummy001
+    400060: Header BG
+    400062: Icone Cultura
+    400064: Icone Logistica
+    400066: Icone Restaurante
+    400068: Icone Saude
+    400070: Line019
+    400072: Line023
+    400074: Line024
+    400076: Line025
+    400078: Line026
+    400080: Linha Cultura
+    400082: Linha logistica
+    400084: Linha Mob
+    400086: Linha restaurantes
+    400088: Linhas Saude
+    400090: Object
+    400092: Object001
+    400094: Object002
+    400096: Object003
+    400098: Object004
+    400100: Object005
+    400102: Object007
+    400104: Object008
+    400106: Object009
+    400108: Object010
+    400110: Object011
+    400112: Object012
+    400114: Object013
+    400116: Object014
+    400118: Object015
+    400120: Plane008
+    400122: Radar BG
+    400124: //RootNode
+    400126: Text007
+    400128: Text009
+    400130: Text010
+    400132: Text011
+    400134: Text012
+    400136: Text013
+    400138: Text014
+    400140: Text015
+    400142: Text016
+    400144: Text017
+    400146: Text018
+    400148: Text019
+    2300000: Arc002
+    2300002: Arc003
+    2300004: Arc004
+    2300006: Arc005
+    2300008: Arc008
+    2300010: Arc009
+    2300012: Box001
+    2300014: Box002
+    2300016: Circle002
+    2300018: Circle005
+    2300020: Circle006
+    2300022: Circle008
+    2300024: Circle009
+    2300026: Circle010
+    2300028: Circle011
+    2300030: Circle012
+    2300032: Circle013
+    2300034: Circle014
+    2300036: Circle015
+    2300038: Circle016
+    2300040: Circle017
+    2300042: Circle018
+    2300044: Circle019
+    2300046: Circle020
+    2300048: Cylinder007
+    2300050: Cylinder008
+    2300052: Cylinder009
+    2300054: Cylinder011
+    2300056: Cylinder012
+    2300058: Header BG
+    2300060: Line019
+    2300062: Line023
+    2300064: Line024
+    2300066: Line025
+    2300068: Line026
+    2300070: Object
+    2300072: Object001
+    2300074: Object002
+    2300076: Object003
+    2300078: Object004
+    2300080: Object005
+    2300082: Object007
+    2300084: Object008
+    2300086: Object009
+    2300088: Object010
+    2300090: Object011
+    2300092: Object012
+    2300094: Object013
+    2300096: Object014
+    2300098: Object015
+    2300100: Plane008
+    2300102: Radar BG
+    2300104: Text007
+    2300106: Text009
+    2300108: Text010
+    2300110: Text011
+    2300112: Text012
+    2300114: Text013
+    2300116: Text014
+    2300118: Text015
+    2300120: Text016
+    2300122: Text017
+    2300124: Text018
+    2300126: Text019
+    3300000: Arc002
+    3300002: Arc003
+    3300004: Arc004
+    3300006: Arc005
+    3300008: Arc008
+    3300010: Arc009
+    3300012: Box001
+    3300014: Box002
+    3300016: Circle002
+    3300018: Circle005
+    3300020: Circle006
+    3300022: Circle008
+    3300024: Circle009
+    3300026: Circle010
+    3300028: Circle011
+    3300030: Circle012
+    3300032: Circle013
+    3300034: Circle014
+    3300036: Circle015
+    3300038: Circle016
+    3300040: Circle017
+    3300042: Circle018
+    3300044: Circle019
+    3300046: Circle020
+    3300048: Cylinder007
+    3300050: Cylinder008
+    3300052: Cylinder009
+    3300054: Cylinder011
+    3300056: Cylinder012
+    3300058: Header BG
+    3300060: Line019
+    3300062: Line023
+    3300064: Line024
+    3300066: Line025
+    3300068: Line026
+    3300070: Object
+    3300072: Object001
+    3300074: Object002
+    3300076: Object003
+    3300078: Object004
+    3300080: Object005
+    3300082: Object007
+    3300084: Object008
+    3300086: Object009
+    3300088: Object010
+    3300090: Object011
+    3300092: Object012
+    3300094: Object013
+    3300096: Object014
+    3300098: Object015
+    3300100: Plane008
+    3300102: Radar BG
+    3300104: Text007
+    3300106: Text009
+    3300108: Text010
+    3300110: Text011
+    3300112: Text012
+    3300114: Text013
+    3300116: Text014
+    3300118: Text015
+    3300120: Text016
+    3300122: Text017
+    3300124: Text018
+    3300126: Text019
+    4300000: Radar BG
+    4300002: Circle006
+    4300004: Header BG
+    4300006: Cylinder008
+    4300008: Arc002
+    4300010: Arc003
+    4300012: Cylinder009
+    4300014: Arc004
+    4300016: Cylinder011
+    4300018: Arc005
+    4300020: Cylinder012
+    4300022: Box001
+    4300024: Plane008
+    4300026: Cylinder007
+    4300028: Arc008
+    4300030: Arc009
+    4300032: Object005
+    4300034: Object
+    4300036: Object003
+    4300038: Object004
+    4300040: Object001
+    4300042: Text009
+    4300044: Object002
+    4300046: Text007
+    4300048: Text010
+    4300050: Text011
+    4300052: Object008
+    4300054: Object009
+    4300056: Text012
+    4300058: Text013
+    4300060: Object010
+    4300062: Text014
+    4300064: Text015
+    4300066: Object011
+    4300068: Object012
+    4300070: Text016
+    4300072: Text017
+    4300074: Text018
+    4300076: Text019
+    4300078: Object007
+    4300080: Circle005
+    4300082: Line019
+    4300084: Circle002
+    4300086: Circle008
+    4300088: Line023
+    4300090: Object013
+    4300092: Circle009
+    4300094: Circle010
+    4300096: Circle011
+    4300098: Circle014
+    4300100: Line024
+    4300102: Circle013
+    4300104: Box002
+    4300106: Circle012
+    4300108: Line025
+    4300110: Object014
+    4300112: Circle015
+    4300114: Circle016
+    4300116: Circle017
+    4300118: Line026
+    4300120: Object015
+    4300122: Circle018
+    4300124: Circle019
+    4300126: Circle020
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 10 - Default
+    second: {fileID: 2100000, guid: 50a1a3d8205a3ba45891018f1b9fedd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 12 - Default
+    second: {fileID: 2100000, guid: 9a977f78f3c5a3d4a8c6e182f13a17a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: COR secundaria 2
+    second: {fileID: 2100000, guid: 87c2a6e0b42005d448c3356d8ae4c1b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #43'
+    second: {fileID: 2100000, guid: 4ad25f2807a06ab48a9b7d11a83e2c28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #44'
+    second: {fileID: 2100000, guid: b431612be894fd248ad30735baaf732a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #45'
+    second: {fileID: 2100000, guid: 194cc1d93e35c584986e4da05f9ba9d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: branco
+    second: {fileID: 2100000, guid: 41837e9b2a6e8b04abe8ddedadf3f5f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cor animada
+    second: {fileID: 2100000, guid: 50a1a3d8205a3ba45891018f1b9fedd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: icone 1
+    second: {fileID: 2100000, guid: ad26c7fce2e307340bb890e12f129b66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: icone 2
+    second: {fileID: 2100000, guid: 086b3b89269483048833bc537261c851, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: icone 3
+    second: {fileID: 2100000, guid: ce4b98cf20d11504199eb7068442b237, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: icone 4
+    second: {fileID: 2100000, guid: 52b05b29aa3fa2a4aa491b2e0412e7e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: icone 5
+    second: {fileID: 2100000, guid: af6a894743712e746994064fcfd472c4, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
