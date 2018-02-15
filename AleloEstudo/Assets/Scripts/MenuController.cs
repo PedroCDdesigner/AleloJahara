@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DigitalRuby.AnimatedLineRenderer;
 
 public class MenuController : MonoBehaviour {
 
@@ -12,16 +13,27 @@ public class MenuController : MonoBehaviour {
 
     public string currentButton;
 
-	void Start ()
+    public GameObject Linha_RadarContent;
+    private AnimatedLineRenderer LRadC;
+
+    public GameObject Linha_Flutua_RadarContent;
+    private AnimatedLineRenderer LFlutC;
+
+    void Start ()
     {
+        LRadC = Linha_RadarContent.GetComponent<AnimatedLineRenderer>();
+        LFlutC = Linha_Flutua_RadarContent.GetComponent<AnimatedLineRenderer>();
+
         MapComponents();
 	}
 
 	public void BotaoHeaderSelect(string name)
     {
-        currentButton = name;
-        
-		switch (name)
+        Reset_RadartoContent_Lines();
+
+        currentButton = name;  
+
+        switch (name)
         {
         case "Mobilidade":
             radarTextController.HandleHeaderButton(name);
@@ -45,6 +57,7 @@ public class MenuController : MonoBehaviour {
 	}
 
     public void HandleQuadrantSelection(string name){
+
         switch (currentButton)
         {
         case "Mobilidade":
@@ -79,6 +92,16 @@ public class MenuController : MonoBehaviour {
     //______Manage the display here______//
     public void PrintContent(string name)
     {
+        //.........Eh possivel colocar isso dentro do switch, para soh acontecer quando algum caso do switch for concluido (content aparecendo)
+        //Reset Line
+        Reset_RadartoContent_Lines();
+
+        //Print Lines
+        LFlutC.MapPoints();
+        LFlutC.clicked = true;
+        LRadC.MapPoints();
+        LRadC.clicked = true;
+
         string switchThis = currentButton + name;
         switch (switchThis)
         {
@@ -279,4 +302,10 @@ public class MenuController : MonoBehaviour {
         radarTextController = GetComponentInChildren<RadarTextController>();
     }
     
+    public void Reset_RadartoContent_Lines()
+    {
+        //Destroys Line
+        LRadC.Reset();
+        LFlutC.Reset();
+    }
 }

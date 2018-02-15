@@ -6,31 +6,20 @@ using DigitalRuby.AnimatedLineRenderer;
 
 public class CenterSliceController : MonoBehaviour, IFocusable, IInputClickHandler
 {
-	Animator animator;
+    Animator animator;
 
     public GameObject Menu;
     MenuController menuController;
 
     public bool isCenterSliceON = false;
 
-    public GameObject Linha_RadarContent;
-    private AnimatedLineRenderer LRadC;
-
-    public GameObject Linha_Flutua_RadarContent;
-    private AnimatedLineRenderer LFlutC;
-
-    private bool unMap = true;
-
-    void Start ()
+    void Start()
     {
-		animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         menuController = Menu.GetComponent<MenuController>();
-
-        LRadC = Linha_RadarContent.GetComponent<AnimatedLineRenderer>();
-        LFlutC = Linha_Flutua_RadarContent.GetComponent<AnimatedLineRenderer>();
     }
 
-	   public void OnFocusEnter()
+    public void OnFocusEnter()
     {
         isCenterSliceON = true;
         animator.SetBool("b_highCenter", true);
@@ -42,7 +31,7 @@ public class CenterSliceController : MonoBehaviour, IFocusable, IInputClickHandl
         animator.SetBool("b_highCenter", false);
     }
 
-		 public void OnInputClicked(InputClickedEventData eventData)
+    public void OnInputClicked(InputClickedEventData eventData)
     {
         /*string quadrantName =  transform.parent.parent.parent.name + transform.parent.name ;
              menuController.HandleQuadrantSelection(quadrantName);
@@ -61,15 +50,6 @@ public class CenterSliceController : MonoBehaviour, IFocusable, IInputClickHandl
         {
             string contentToPrint = transform.parent.parent.parent.parent.name + this.gameObject.name;
             menuController.PrintContent(contentToPrint);
-
-            //Only maps line points if needed
-            if (!LRadC.isMapped && unMap)
-            {
-                LFlutC.MapPoints();
-                LRadC.MapPoints();
-            }
-            LFlutC.clicked = true;
-            LRadC.clicked = true;
         }
     }
 }
