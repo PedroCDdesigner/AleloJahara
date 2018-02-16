@@ -87,7 +87,7 @@ public class MenuController : MonoBehaviour {
 
 
     }
-
+    //Testando um commit
     //Function called by OutSliceController and CenterSliceController
     //______Manage the display here______//
     public void PrintContent(string name)
