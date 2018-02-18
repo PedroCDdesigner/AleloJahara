@@ -6,11 +6,38 @@ using UnityEngine.Video;
 public class ConteudoController : MonoBehaviour {
 
 	private VideoPlayer videoPlayer;
+	private AudioSource audioSource;
 
 	// Use this for initialization
+
+	void Awake() {
+			videoPlayer = GetComponentInChildren<VideoPlayer>();
+			audioSource = GetComponentInChildren<AudioSource>();
+	}
 	void Start () {
-		videoPlayer = GetComponentInChildren<VideoPlayer>();
-		videoPlayer.Play();
+	
+		
+		
+	}
+
+	void OnEnable(){
+		if (audioSource){
+			audioSource.Play();
+		}
+		
+		if (videoPlayer){
+			videoPlayer.Play();
+		}
+		
+	}
+
+	void OnDisable(){
+		if (audioSource){
+			audioSource.Stop();
+		}
+		if (videoPlayer){
+			videoPlayer.Stop();
+		}
 		
 	}
 	
