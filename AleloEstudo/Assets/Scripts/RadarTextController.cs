@@ -11,19 +11,15 @@ public class RadarTextController : MonoBehaviour {
 	GameObject cultura;
 
 
-	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 		MapComponents();
-		
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	public void HandleHeaderButton(string name)
+    {
+        HideAll();
 
-	public void HandleHeaderButton(string name){
-		HideAll();
 		switch (name)
         {
         case "Mobilidade":
@@ -47,7 +43,8 @@ public class RadarTextController : MonoBehaviour {
 		}
 	}
 
-	private void MapComponents(){
+	private void MapComponents()
+    {
 		mobilidade = transform.Find("Mobilidade").gameObject;
 		restaurante = transform.Find("Restaurante").gameObject;
 		saude = transform.Find("Saude").gameObject;
@@ -56,7 +53,8 @@ public class RadarTextController : MonoBehaviour {
 
 	}
 
-	private void HideAll(){
+	private void HideAll()
+    {
 		mobilidade.SetActive(false);
 		restaurante.SetActive(false);
 		saude.SetActive(false);

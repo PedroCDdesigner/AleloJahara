@@ -101,6 +101,7 @@ public class MenuController : MonoBehaviour {
         //Print Lines
         LFlutC.MapPoints();
         LFlutC.clicked = true;
+
         LRadC.MapPoints();
         LRadC.clicked = true;
 

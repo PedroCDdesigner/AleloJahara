@@ -8,6 +8,10 @@ public class CenterSliceController : MonoBehaviour, IFocusable, IInputClickHandl
 {
     Animator animator;
 
+    private RadarController radarController;
+   
+    public string contentToPrint;
+
     public GameObject Menu;
     MenuController menuController;
 
@@ -15,6 +19,7 @@ public class CenterSliceController : MonoBehaviour, IFocusable, IInputClickHandl
 
     void Start()
     {
+        radarController = FindObjectOfType<RadarController>();
         animator = GetComponent<Animator>();
         menuController = Menu.GetComponent<MenuController>();
     }
@@ -27,8 +32,8 @@ public class CenterSliceController : MonoBehaviour, IFocusable, IInputClickHandl
 
     public void OnFocusExit()
     {
-        isCenterSliceON = false;
-        animator.SetBool("b_highCenter", false);
+            isCenterSliceON = false;
+            animator.SetBool("b_highCenter", false);
     }
 
     public void OnInputClicked(InputClickedEventData eventData)
@@ -36,10 +41,21 @@ public class CenterSliceController : MonoBehaviour, IFocusable, IInputClickHandl
         /*string quadrantName =  transform.parent.parent.parent.name + transform.parent.name ;
              menuController.HandleQuadrantSelection(quadrantName);
         */
-        if (isCenterSliceON)
+        if (isCenterSliceON && menuController.currentButton != null)
         {
-            string contentToPrint = transform.parent.parent.parent.parent.name + this.gameObject.name;
+            animator.SetBool("b_isClicked", true);
+            radarController.setquadrantName(transform.parent.parent.parent.parent.name);
+            //Debug.Log(quadrantName);
+            contentToPrint = radarController.getquadrantName() + this.gameObject.name;
             menuController.PrintContent(contentToPrint);
+
+            //Used to store which button was selected
+            radarController.SliceSelect(contentToPrint);
+        }
+        //Removes the "Clicked State" when you click another Slice
+        if (radarController.getCurrentSlice() != contentToPrint)
+        {
+            animator.SetBool("b_isClicked", false);
         }
     }
 
@@ -48,8 +64,19 @@ public class CenterSliceController : MonoBehaviour, IFocusable, IInputClickHandl
     {
         if (isCenterSliceON && Input.GetMouseButtonDown(0) && menuController.currentButton != null)
         {
-            string contentToPrint = transform.parent.parent.parent.parent.name + this.gameObject.name;
+            animator.SetBool("b_isClicked", true);
+            radarController.setquadrantName(transform.parent.parent.parent.parent.name);
+            //Debug.Log(quadrantName);
+            contentToPrint = radarController.getquadrantName() + this.gameObject.name;
             menuController.PrintContent(contentToPrint);
+
+            //Used to store which button was selected
+            radarController.SliceSelect(contentToPrint);
+        }
+        //Removes the "Clicked State" when you click another Slice
+        if (radarController.getCurrentSlice() != contentToPrint)
+        {
+            animator.SetBool("b_isClicked", false);
         }
     }
 }

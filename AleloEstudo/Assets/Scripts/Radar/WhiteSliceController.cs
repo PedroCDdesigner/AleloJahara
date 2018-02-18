@@ -5,8 +5,8 @@ using HoloToolkit.Unity.InputModule;
 
 public class WhiteSliceController : MonoBehaviour, IFocusable {
 
-	private Animator Anim;
-    
+	private RadarController radarController;
+
     public GameObject OutSlice;
     private OutSliceController OutSliceController;
 
@@ -15,8 +15,11 @@ public class WhiteSliceController : MonoBehaviour, IFocusable {
 
     public bool isWhiteSliceOn;
 
+    private Animator Anim;
+
     void Start ()
     {
+        radarController = FindObjectOfType<RadarController>();
         Anim = GetComponent<Animator>();
         CenterSliceController = CenterSlice.GetComponent<CenterSliceController>();
         OutSliceController = OutSlice.GetComponent<OutSliceController>();
@@ -30,7 +33,7 @@ public class WhiteSliceController : MonoBehaviour, IFocusable {
     //Manages animation on Update
     private void Update()
     {
-        if (OutSliceController.isOutSliceON || CenterSliceController.isCenterSliceON || isWhiteSliceOn)
+        if (OutSliceController.isOutSliceON || CenterSliceController.isCenterSliceON || isWhiteSliceOn || radarController.getquadrantName() == transform.parent.name)
         {
             Anim.SetBool("b_highlightWhite", true);
         }       else
