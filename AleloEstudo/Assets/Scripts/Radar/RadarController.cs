@@ -11,7 +11,6 @@ public class RadarController : MonoBehaviour {
     public void SliceSelect(string name)
     {
         currentSlice = name;
-        //print("the name of the current Slice is: " + name); //Debug
     }
 
     //CurrentSlice Getter
@@ -31,14 +30,5 @@ public class RadarController : MonoBehaviour {
     {
         quadrantName = name;
     }
-    void Start ()
-    {
-		
-	}
-	
 
-	void Update ()
-    {
-		
-	}
 }

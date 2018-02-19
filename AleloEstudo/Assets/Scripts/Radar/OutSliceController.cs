@@ -15,13 +15,16 @@ public class OutSliceController : MonoBehaviour, IFocusable, IInputClickHandler
 
     public bool isOutSliceON = false;
 
-    Animator animator;
+    public Animator animator;
 
     void Start()
     {
         radarController = FindObjectOfType<RadarController>();
         animator = GetComponent<Animator>();
         menuController = Menu.GetComponent<MenuController>();
+
+        //ASSIGNT METHOD TO MenuController OnClicked EVENT
+        MenuController.OnClicked += ResetAllSlices;
     }
 
     public void OnFocusEnter()
@@ -65,17 +68,28 @@ public class OutSliceController : MonoBehaviour, IFocusable, IInputClickHandler
         {
             animator.SetBool("b_isClicked", true);
             radarController.setquadrantName(transform.parent.parent.parent.parent.name);
-            //Debug.Log(quadrantName); //Debug
+            
             contentToPrint = radarController.getquadrantName() + this.gameObject.name;
             menuController.PrintContent(contentToPrint);
 
             //Used to store which button was selected
             radarController.SliceSelect(contentToPrint);
+
+            //MenuController.OnClicked += ResetAllSlices;             
         }
         //Removes the "Clicked State" when you click another Slice
         if (radarController.getCurrentSlice() != contentToPrint)
         {
             animator.SetBool("b_isClicked", false);
+            //MenuController.OnClicked -= ResetAllSlices;
         }
     }
+
+    //Method is invoked when any the BotaoHeaderSelect(string name) method is called on MenuController.cs
+    public void ResetAllSlices()
+    {
+        animator.SetBool("b_isClicked", false);
+    }
+
+
 }

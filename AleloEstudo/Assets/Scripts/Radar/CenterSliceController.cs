@@ -6,7 +6,7 @@ using DigitalRuby.AnimatedLineRenderer;
 
 public class CenterSliceController : MonoBehaviour, IFocusable, IInputClickHandler
 {
-    Animator animator;
+
 
     private RadarController radarController;
    
@@ -17,11 +17,16 @@ public class CenterSliceController : MonoBehaviour, IFocusable, IInputClickHandl
 
     public bool isCenterSliceON = false;
 
+    public Animator animator;
+
     void Start()
     {
         radarController = FindObjectOfType<RadarController>();
         animator = GetComponent<Animator>();
         menuController = Menu.GetComponent<MenuController>();
+
+        //ASSIGNT METHOD TO ButtonHeader EVENT
+        MenuController.OnClicked += ResetAllSlices;
     }
 
     public void OnFocusEnter()
@@ -72,11 +77,22 @@ public class CenterSliceController : MonoBehaviour, IFocusable, IInputClickHandl
 
             //Used to store which button was selected
             radarController.SliceSelect(contentToPrint);
+
+
         }
         //Removes the "Clicked State" when you click another Slice
         if (radarController.getCurrentSlice() != contentToPrint)
         {
             animator.SetBool("b_isClicked", false);
+            MenuController.OnClicked -= ResetAllSlices;
         }
     }
+
+    //Method is invoked when any the BotaoHeaderSelect(string name) method is called on MenuController.cs
+    public void ResetAllSlices()
+    {
+        animator.SetBool("b_isClicked", false);
+    }
+
+
 }

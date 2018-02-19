@@ -5,7 +5,12 @@ using DigitalRuby.AnimatedLineRenderer;
 
 public class MenuController : MonoBehaviour {
 
-	// Use this for initialization
+    // Use this for initialization
+
+    //EVENT MANAGER//
+    public delegate void ClickHeader();
+    public static event ClickHeader OnClicked;
+    //EVENT MANAGER//
 
     private BotaoHeader[] botaoHeaders;
 
@@ -19,17 +24,22 @@ public class MenuController : MonoBehaviour {
     public GameObject Linha_Flutua_RadarContent;
     private AnimatedLineRenderer LFlutC;
 
+    public bool resetSlices = false;
+
     void Start ()
     {
         LRadC = Linha_RadarContent.GetComponent<AnimatedLineRenderer>();
         LFlutC = Linha_Flutua_RadarContent.GetComponent<AnimatedLineRenderer>();
-
+        //WScontroller = FindObjectOfType<WhiteSliceController>();
         MapComponents();
 	}
 
 	public void BotaoHeaderSelect(string name)
-    {
+    {        
         Reset_RadartoContent_Lines();
+
+        //ATIVA O EVENTO "OnClicked" quando esta funcao eh chamada.
+        if (OnClicked != null) { OnClicked(); }
 
         currentButton = name;  
 
